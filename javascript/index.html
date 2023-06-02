@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="alert-box" id="alert-box">
+        <p class="text" id="text"></p>
+        <button id="close">
+            알림창임
+        </button>
+    </div>
+
+    <button onclick="Modal('block','아이디를 입력하세요')">버튼1</button>
+    <button onclick="Modal('block','패스워드를 입력하세요')">버튼2</button>
+
+</body>
+</html>
+<script>
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('alert-box').style.display = 'none'
+    })
+
+    function Modal(display,text){
+        document.getElementById('alert-box').style.display = display;
+        document.getElementById('text').innerText = text;
+    }
+
+
+
+
+</script>
