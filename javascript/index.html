@@ -36,6 +36,13 @@
         </form>
 
         <script>
+            if(1 != 2){
+                console.log('안녕');
+            }
+        </script>
+
+
+        <script>
             // 전송버튼 누르면
             // 저기 input에 입력한값이 공백이면 알림창 띄워주세요.
             var str = document.getElementById('personName');
@@ -57,9 +64,36 @@
                }
             })
 
+                                 
+
+
+        </script>
+
+        <script>
+            function 삼육구게임(num){
 
 
 
+                if( num % 9 == 0 ){
+                    console.log('박수박수')
+                }else if(num % 3 == 0){
+                    console.log('박수')
+                }else{
+                    console.log('통과')
+                }
+
+            }
+        </script>
+        <script>
+            function 합격했냐(개론,민법){
+
+
+                if( ((개론 + 민법) >= 120) && (개론 >= 40 && 민법 >= 40) == true){
+                    alert('합격')
+                }else(
+                    alert('불합격')
+                )
+            }
         </script>
     </div>
 </div>
